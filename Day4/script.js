@@ -12,12 +12,10 @@ findNextSquare(114) --> returns -1 since 114 is not a perfect
 
 function findNextSquare(sq) {
     let sqRoot = Math.sqrt(sq);
-    let nextSq = (sqRoot+1) * (sqRoot+1);
-    let answer;
-    if (sqRoot % 1 == 0) {
-      answer = nextSq;
-    } else if (sqRoot % 1 !== 0) {
-      answer = (-1);
+    if(sqRoot % 1 !== 0) {
+      return (-1)    
     }
-    return answer;
+    return (sqRoot+1) * (sqRoot+1);
   }
+
+  
